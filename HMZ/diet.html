@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>diet</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<form id="dietForm">
+  <label>Weight (kg)</label>
+  <input type="number" id="weight" required>
+
+  <label>Height (cm)</label>
+  <input type="number" id="height" required>
+
+  <label>Age</label>
+  <input type="number" id="age" required>
+
+  <label>Money Currency</label>
+  <select id="currency">
+    <option value="USD">USD</option>
+    <option value="EUR">EUR</option>
+    <option value="TND">TND</option>
+    <option value="GBP">GBP</option>
+  </select>
+  <label>Disease (if any)</label>
+  <input type="text" id="disease" placeholder="e.g., diabetes">
+
+  <label>Other Comments</label>
+  <textarea id="comments" rows="3" placeholder="Any other information..."></textarea>
+  <center><button type="submit">Generate Diet Plan</button></center>
+</form>
+<section><div id="output"></div></section>
+<script src="script.js"></script>
+</body>
+</html>
